@@ -1,0 +1,44 @@
+:root {
+
+    @font-face {
+        font-family: 'Roboto', sans-serif;
+        src: url(../font/Roboto-Bold.ttf) format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Roboto', sans-serif;
+        src: url(../font/Roboto-Regular.ttf) format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Roboto';
+        src: url(../font/Roboto-Light.ttf) format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Marck Script';
+        src: url(../font/MarckScript-Regular.ttf) format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Protest Revolution';
+        src: url(../font/ProtestRevolution-Regular.ttf) format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    --font-body: 'Roboto',
+    sans-serif;
+    --font-title: 'Protest Revolution',
+    cursive;
+    --font-citation: 'Marck Script',
+    sans-serif;
+}

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --primary: #a7001e;
+  --primary-light: #ffd3d3;
+  --primary-middle: #260007;
+  --primary-dark: #170004;
+  --good-message: #139700;
+  --bad-message: #ff0000;
+}
+
+:root {
+  --font-body: "Roboto",
+  sans-serif;
+  --font-title: "Protest Revolution",
+  cursive;
+  --font-citation: "Marck Script",
+  sans-serif;
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../font/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../font/Roboto-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Marck Script";
+  src: url(../font/MarckScript-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Protest Revolution";
+  src: url(../font/ProtestRevolution-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--primary-dark);
+  color: var(--primary-light);
+  font-family: var(--font-roboto);
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
