@@ -102,6 +102,10 @@ i {
   font-size: 2rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .btn {
   background: var(--primary-super-light);
   color: var(--primary-light);
@@ -119,24 +123,22 @@ header {
 header .menu-secondary {
   padding: 2rem 1rem;
 }
-header .menu-secondary .nav-items {
+header .menu-secondary ul {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-header .menu-secondary .nav-item {
+header .menu-secondary li {
   padding: 0 1rem;
-}
-header .menu-secondary .hidden {
-  display: none;
 }
 header .menu-primary {
   padding: 2rem 0;
 }
 header .menu-primary .menu-burger {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding-bottom: 3rem;
 }
 header .menu-primary .menu-burger img {
   width: 10rem;
@@ -147,8 +149,7 @@ header .menu-primary .menu-burger i {
 header .menu-primary .nav-items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   display: none;
 }
 header .menu-primary .nav-items .nav-item {

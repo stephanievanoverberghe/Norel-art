@@ -4,18 +4,16 @@ header {
     .menu-secondary {
         padding: 2rem 1rem;
 
-        .nav-items {
+        ul {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
-        .nav-item {
+        li {
             padding: 0 1rem;
         }
 
-        .hidden {
-            display: none;
-        }
     }
 
     .menu-primary {
@@ -23,9 +21,9 @@ header {
 
         .menu-burger {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
+            padding-bottom: 3rem;
 
             img {
                 width: 10rem;
@@ -39,8 +37,7 @@ header {
         .nav-items {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
             display: none;
 
             .nav-item {
