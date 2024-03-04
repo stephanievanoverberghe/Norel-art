@@ -2,4 +2,18 @@
 @use 'variables';
 @use 'fonts';
 @use 'bases';
+@use 'buttons';
 @use 'header';
+
+.grid-container {
+    display: grid;
+    grid: 'header' auto 'main' auto 'footer' auto / auto;
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid: footer;
+    }
+}

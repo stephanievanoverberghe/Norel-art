@@ -14,6 +14,7 @@ ul {
 
 :root {
   --primary: #a7001e;
+  --primary-super-light: #ef002c;
   --primary-light: #ffd3d3;
   --primary-middle: #260007;
   --primary-dark: #170004;
@@ -62,10 +63,10 @@ ul {
 
 html {
   font-size: 62.5%;
-  background: var(--primary-dark);
 }
 
 body {
+  background: var(--primary-dark);
   color: var(--primary-light);
   font-family: var(--font-roboto);
   font-size: 1.6rem;
@@ -85,11 +86,84 @@ img {
   max-width: 100%;
 }
 
-#header .navbar {
-  background: var(--primary-dark) !important;
+a {
+  color: var(--primary-light);
+  transition: all 0.3s;
+  cursor: pointer;
 }
-#header .navbar-brand-img {
-  width: 25%;
+a:hover {
+  color: var(--primary-super-light);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--primary-super-light);
+}
+
+i {
+  color: var(--primary-super-light);
+  font-size: 2rem;
+}
+
+.btn {
+  background: var(--primary-super-light);
+  color: var(--primary-light);
+  font-weight: 700;
+  padding: 1rem 2rem;
+}
+.btn i {
+  color: var(--primary-light);
+  margin-right: 0.5rem;
+}
+
+header {
+  grid-area: header;
+}
+header .menu-secondary {
+  padding: 2rem 1rem;
+}
+header .menu-secondary .nav-items {
+  display: flex;
+  justify-content: center;
+}
+header .menu-secondary .nav-item {
+  padding: 0 1rem;
+}
+header .menu-secondary .hidden {
+  display: none;
+}
+header .menu-primary {
+  padding: 2rem 0;
+}
+header .menu-primary .menu-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-primary .menu-burger img {
+  width: 10rem;
+}
+header .menu-primary .menu-burger i {
+  font-size: 7rem;
+}
+header .menu-primary .nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+header .menu-primary .nav-items .nav-item {
+  padding: 1.8rem 0;
+}
+
+.grid-container {
+  display: grid;
+  grid: "header" auto "main" auto "footer" auto/auto;
+}
+.grid-container main {
+  grid-area: main;
+}
+.grid-container footer {
+  grid: footer;
 }
 
 /*# sourceMappingURL=style.css.map */

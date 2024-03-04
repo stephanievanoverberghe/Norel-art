@@ -1,9 +1,9 @@
 html {
     font-size: 62.5%;
-    background: var(--primary-dark);
 }
 
 body {
+    background: var(--primary-dark);
     color: var(--primary-light);
     font-family: var(--font-roboto);
     font-size: 1.6rem;
@@ -21,4 +21,21 @@ h6 {
 
 img {
     max-width: 100%;
+}
+
+a {
+    color: var(--primary-light);
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-super-light);
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--primary-super-light);
+    }
+}
+
+i {
+    color: var(--primary-super-light);
+    font-size: 2rem;
 }

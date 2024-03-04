@@ -1,11 +1,53 @@
-#header {
+header {
+    grid-area: header;
 
-    .navbar {
-        background: var(--primary-dark) !important;
+    .menu-secondary {
+        padding: 2rem 1rem;
+
+        .nav-items {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-item {
+            padding: 0 1rem;
+        }
+
+        .hidden {
+            display: none;
+        }
     }
 
-    .navbar-brand-img {
-        width: 25%;
+    .menu-primary {
+        padding: 2rem 0;
 
+        .menu-burger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 10rem;
+            }
+
+            i {
+                font-size: 7rem;
+            }
+        }
+
+        .nav-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+
+            .nav-item {
+                padding: 1.8rem 0;
+
+
+            }
+        }
     }
 }
