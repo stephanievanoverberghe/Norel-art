@@ -1,3 +1,6 @@
+import './assets/scss/styles.scss';
+import './index.scss';
+
 const navItems = document.querySelector('.nav-items');
 const navItem = document.querySelectorAll('.nav-item');
 

@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "vite.config.js",
   "scripts": {
-    "sass": "sass -w src/sass:src/css",
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -13,10 +11,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.71.1"
-  },
   "devDependencies": {
+    "sass": "^1.71.1",
     "vite": "^5.1.4"
   }
 }
